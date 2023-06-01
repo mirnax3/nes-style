@@ -4,7 +4,7 @@ type ButtonStyle = {
 }
 export interface ButtonProps {
   label: string;
-  style: ButtonStyle;
+  style?: ButtonStyle;
   onClick: () => void;
 }
 const Button: React.FunctionComponent<ButtonProps> = ({ label, style, onClick }) => {
