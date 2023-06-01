@@ -6,7 +6,9 @@ import postcss from "rollup-plugin-postcss";
 const packageJson = require("./package.json");
 export default {
   input: "src/index.tsx",
-  output: { dir: './dist' },
+  output: { dir: './dist', paths: {
+      "react/jsx-runtime": "react/jsx-runtime.js",
+    } },
   //   [
   //   {
   //     file: packageJson.main,

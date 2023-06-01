@@ -1,4 +1,4 @@
-import { jsx, jsxs } from 'react/jsx-runtime';
+import { jsx, jsxs } from 'react/jsx-runtime.js';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
