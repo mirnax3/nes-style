@@ -1,15 +1,6 @@
-'use strict';
-
-Object.defineProperty(exports, '__esModule', { value: true });
-
-var jsxRuntime = require('react/jsx-runtime');
-var React = require('react');
-var ReactDOM = require('react-dom/client');
-
-function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
-
-var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
-var ReactDOM__default = /*#__PURE__*/_interopDefaultLegacy(ReactDOM);
+import { jsx, jsxs } from 'react/jsx-runtime';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
 function styleInject(css, ref) {
   if ( ref === void 0 ) ref = {};
@@ -71,7 +62,7 @@ var css_248z = ".App {\n  text-align: center;\n}\n\n.App-logo {\n  height: 40vmi
 styleInject(css_248z);
 
 function App() {
-    return (jsxRuntime.jsx("div", __assign({ className: "App" }, { children: jsxRuntime.jsxs("header", __assign({ className: "App-header" }, { children: [jsxRuntime.jsxs("p", { children: ["Edit ", jsxRuntime.jsx("code", { children: "src/App.tsx" }), " and save to reload."] }), jsxRuntime.jsx("a", __assign({ className: "App-link", href: "https://reactjs.org", target: "_blank", rel: "noopener noreferrer" }, { children: "Learn React" }))] })) })));
+    return (jsx("div", __assign({ className: "App" }, { children: jsxs("header", __assign({ className: "App-header" }, { children: [jsxs("p", { children: ["Edit ", jsx("code", { children: "src/App.tsx" }), " and save to reload."] }), jsx("a", __assign({ className: "App-link", href: "https://reactjs.org", target: "_blank", rel: "noopener noreferrer" }, { children: "Learn React" }))] })) })));
 }
 
 var reportWebVitals = function (onPerfEntry) {
@@ -89,11 +80,11 @@ var reportWebVitals = function (onPerfEntry) {
 
 var Button = function (_a) {
     var label = _a.label, style = _a.style, onClick = _a.onClick;
-    return (jsxRuntime.jsx("button", __assign({ style: style, onClick: onClick }, { children: label })));
+    return (jsx("button", __assign({ style: style, onClick: onClick }, { children: label })));
 };
 
-var root = ReactDOM__default["default"].createRoot(document.getElementById('root'));
-root.render(jsxRuntime.jsx(React__default["default"].StrictMode, { children: jsxRuntime.jsx(App, {}) }));
+var root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(jsx(React.StrictMode, { children: jsx(App, {}) }));
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
@@ -110,5 +101,5 @@ var webVitals = /*#__PURE__*/Object.freeze({
   getTTFB: P
 });
 
-exports.Button = Button;
-//# sourceMappingURL=index.js.map
+export { Button };
+//# sourceMappingURL=index.esm.js.map

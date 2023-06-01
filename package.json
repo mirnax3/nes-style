@@ -1,6 +1,6 @@
 {
   "name": "@mirnaplakalovic/mirioui",
-  "version": "0.1.7",
+  "version": "0.2.0",
   "description": "component system in progress",
   "author": "Mirna Plakalovic",
   "private": false,
@@ -70,8 +70,7 @@
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "jsx-runtime": "^1.2.0"
+    "react-dom": "^18.2.0"
   },
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
