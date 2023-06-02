@@ -74,6 +74,19 @@ function App() {
     return (jsxRuntime.jsx("div", __assign({ className: "App" }, { children: jsxRuntime.jsxs("header", __assign({ className: "App-header" }, { children: [jsxRuntime.jsxs("p", { children: ["Edit ", jsxRuntime.jsx("code", { children: "src/App.tsx" }), " and save to reload."] }), jsxRuntime.jsx("a", __assign({ className: "App-link", href: "https://reactjs.org", target: "_blank", rel: "noopener noreferrer" }, { children: "Learn React" }))] })) })));
 }
 
+var reportWebVitals = function (onPerfEntry) {
+    if (onPerfEntry && onPerfEntry instanceof Function) {
+        Promise.resolve().then(function () { return require('./web-vitals-b8b00b43.js'); }).then(function (_a) {
+            var getCLS = _a.getCLS, getFID = _a.getFID, getFCP = _a.getFCP, getLCP = _a.getLCP, getTTFB = _a.getTTFB;
+            getCLS(onPerfEntry);
+            getFID(onPerfEntry);
+            getFCP(onPerfEntry);
+            getLCP(onPerfEntry);
+            getTTFB(onPerfEntry);
+        });
+    }
+};
+
 var Button = function (_a) {
     var label = _a.label, style = _a.style, onClick = _a.onClick;
     return (jsxRuntime.jsx("button", __assign({ style: style, onClick: onClick }, { children: label })));
@@ -81,6 +94,9 @@ var Button = function (_a) {
 
 var root = ReactDOM__default["default"].createRoot(document.getElementById('root'));
 root.render(jsxRuntime.jsx(React__default["default"].StrictMode, { children: jsxRuntime.jsx(App, {}) }));
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
 
 exports.Button = Button;
-//# sourceMappingURL=index.js.map
