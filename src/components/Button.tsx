@@ -7,9 +7,8 @@ export interface ButtonProps {
   style?: ButtonStyle;
   onClick: () => void;
 }
-const Button: React.FunctionComponent<ButtonProps> = ({ label, style, onClick }) => {
+export const Button = ({ label, style, onClick }: ButtonProps) => {
   return (
-    <button style={style} onClick={onClick}>{label}</button>
+    <button style={style} onClick={onClick} className="p-4 bg-indigo-400 rounded-lg border-2 border-indigo-800">{label}</button>
   );
 };
-export default Button;

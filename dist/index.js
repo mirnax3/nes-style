@@ -38,8 +38,8 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z$1 = "body {\n  margin: 0;\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',\n    sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',\n    monospace;\n}\n";
-styleInject(css_248z$1);
+var css_248z$2 = "body {\n  margin: 0;\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',\n    sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',\n    monospace;\n}\n";
+styleInject(css_248z$2);
 
 /******************************************************************************
 Copyright (c) Microsoft Corporation.
@@ -67,17 +67,20 @@ var __assign = function() {
     return __assign.apply(this, arguments);
 };
 
-var css_248z = ".App {\n  text-align: center;\n}\n\n.App-logo {\n  height: 40vmin;\n  pointer-events: none;\n}\n\n@media (prefers-reduced-motion: no-preference) {\n  .App-logo {\n    animation: App-logo-spin infinite 20s linear;\n  }\n}\n\n.App-header {\n  background-color: #282c34;\n  min-height: 100vh;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  font-size: calc(10px + 2vmin);\n  color: white;\n}\n\n.App-link {\n  color: #61dafb;\n}\n\n@keyframes App-logo-spin {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n}\n";
-styleInject(css_248z);
+var css_248z$1 = "\n.App {\n  text-align: center;\n}\n\n.App-logo {\n  height: 40vmin;\n  pointer-events: none;\n}\n\n@media (prefers-reduced-motion: no-preference) {\n  .App-logo {\n    animation: App-logo-spin infinite 20s linear;\n  }\n}\n\n.App-header {\n  background-color: #282c34;\n  min-height: 100vh;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  font-size: calc(10px + 2vmin);\n  color: white;\n}\n\n.App-link {\n  color: #61dafb;\n}\n\n@keyframes App-logo-spin {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n}\n";
+styleInject(css_248z$1);
 
-function App() {
-    return (jsxRuntime.jsx("div", __assign({ className: "App" }, { children: jsxRuntime.jsxs("header", __assign({ className: "App-header" }, { children: [jsxRuntime.jsxs("p", { children: ["Edit ", jsxRuntime.jsx("code", { children: "src/App.tsx" }), " and save to reload."] }), jsxRuntime.jsx("a", __assign({ className: "App-link", href: "https://reactjs.org", target: "_blank", rel: "noopener noreferrer" }, { children: "Learn React" }))] })) })));
-}
+var css_248z = "@tailwind base;\n@tailwind components;\n@tailwind utilities;\n";
+styleInject(css_248z);
 
 var Button = function (_a) {
     var label = _a.label, style = _a.style, onClick = _a.onClick;
-    return (jsxRuntime.jsx("button", __assign({ style: style, onClick: onClick }, { children: label })));
+    return (jsxRuntime.jsx("button", __assign({ style: style, onClick: onClick, className: "p-4 bg-indigo-400 rounded-lg border-2 border-indigo-800" }, { children: label })));
 };
+
+function App() {
+    return (jsxRuntime.jsx("div", __assign({ className: "App" }, { children: jsxRuntime.jsx("header", __assign({ className: "App-header" }, { children: jsxRuntime.jsx(Button, { onClick: function () { return null; }, label: "button" }) })) })));
+}
 
 var root = ReactDOM__default["default"].createRoot(document.getElementById('root'));
 root.render(jsxRuntime.jsx(React__default["default"].StrictMode, { children: jsxRuntime.jsx(App, {}) }));
