@@ -32,11 +32,13 @@
     ]
   },
   "devDependencies": {
+    "@babel/preset-typescript": "^7.21.5",
     "@rollup/plugin-commonjs": "^25.0.0",
     "@rollup/plugin-node-resolve": "^15.1.0",
     "@storybook/addon-essentials": "^7.0.18",
     "@storybook/addon-interactions": "^7.0.18",
     "@storybook/addon-links": "^7.0.18",
+    "@storybook/addon-styling": "^1.0.8",
     "@storybook/blocks": "^7.0.18",
     "@storybook/preset-create-react-app": "^7.0.18",
     "@storybook/react": "^7.0.18",
@@ -49,6 +51,7 @@
     "@types/node": "^16.18.34",
     "@types/react": "^18.2.7",
     "@types/react-dom": "^18.2.4",
+    "autoprefixer": "^10.4.14",
     "babel-plugin-named-exports-order": "^0.0.2",
     "eslint-plugin-storybook": "^0.6.12",
     "jsx-runtime": "^1.2.0",

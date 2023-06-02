@@ -1,14 +1,11 @@
 import * as React from "react";
-type ButtonStyle = {
-  [property: string]: string;
-}
-export interface ButtonProps {
+
+export type ButtonProps = {
   label: string;
-  style?: ButtonStyle;
   onClick: () => void;
 }
-export const Button = ({ label, style, onClick }: ButtonProps) => {
+export const Button = ({ label, onClick }: ButtonProps) => {
   return (
-    <button style={style} onClick={onClick} className="p-4 bg-indigo-400 rounded-lg border-2 border-indigo-800">{label}</button>
+    <button onClick={onClick} className="p-4 bg-indigo-400 rounded-lg border-2 border-indigo-800">{label}</button>
   );
 };
