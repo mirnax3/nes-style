@@ -26,7 +26,8 @@ export default {
     commonjs(),
     typescript({ useTsconfigDeclarationDir: true }),
     postcss({
-      extensions: ['.css']
+      extensions: ['.css'],
+      extract: 'https://fonts.googleapis.com/css?family=Press+Start+2P'
     })
   ]
 };
