@@ -1,6 +1,6 @@
 {
   "name": "@mirnaplakalovic/mirioui",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "component system in progress",
   "author": "Mirna Plakalovic",
   "private": false,
@@ -11,7 +11,7 @@
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "build-static-webapp":"expo build:web"
+    "build-static-webapp": "expo build:web"
   },
   "eslintConfig": {
     "extends": [
@@ -65,7 +65,8 @@
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "nes.css": "^2.3.0"
   },
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -73,9 +74,6 @@
   "files": [
     "dist"
   ],
-  "dependencies": {
-    "nes.css": "^2.3.0"
-  },
   "browserslist": {
     "production": [
       ">0.2%",
