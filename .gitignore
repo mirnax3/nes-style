@@ -9,6 +9,7 @@
 /coverage
 
 # production
+/dist
 /build
 
 # misc
@@ -25,3 +26,9 @@ yarn-error.log*
 # JetBrains
 .idea/
 /public/rss
+
+# local Netlify folder
+.netlify
+
+# module output
+.dist/
