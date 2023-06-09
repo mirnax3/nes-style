@@ -83,5 +83,8 @@
   "types": "dist/index.d.ts",
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "nes.css": "^2.3.0"
+  }
 }

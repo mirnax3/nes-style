@@ -6,6 +6,6 @@ export type ButtonProps = {
 }
 export const Button = ({ label, onClick }: ButtonProps) => {
   return (
-    <button onClick={onClick} className="p-4 bg-indigo-400 rounded-lg border-2 border-indigo-800">{label}</button>
+    <button onClick={onClick} className="nes-btn is-primary p-4">{label}</button>
   );
 };
