@@ -26,5 +26,8 @@ yarn-error.log*
 .idea/
 /public/rss
 
-# Local Netlify folder
+# local Netlify folder
 .netlify
+
+# module output
+.dist/
