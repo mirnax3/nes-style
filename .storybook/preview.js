@@ -1,7 +1,6 @@
 import '!style-loader!css-loader!postcss-loader!tailwindcss/tailwind.css';
 import '../src/global.css';
 import "nes.css/css/nes.min.css";
-import "https://fonts.googleapis.com/css?family=Press+Start+2P"
 
 const preview = {
   parameters: {

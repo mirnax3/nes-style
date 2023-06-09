@@ -8,7 +8,6 @@ function App() {
   return (
     <html>
       <head title="App">
-        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet" />
         <title>MirioUI</title>
       </head>
       <body>
