@@ -7,14 +7,13 @@ module.exports = {
     name: "@storybook/react-webpack5",
     options: {},
   },
-  stories: ['../src/stories/**/*.stories.mdx', '../src/stories/**/*.stories.@(js|jsx|ts|tsx)'],
+  stories: ['../src/stories/**/*.stories.@(js|jsx|ts|tsx)'],
   addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    // "@storybook/preset-create-react-app",
     "@storybook/addon-interactions",
     {
-      // name: '@storybook/addon-postcss',
+      name: '@storybook/addon-postcss',
       name: '@storybook/addon-styling',
       options: {
         postcssLoaderOptions: {
