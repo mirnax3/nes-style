@@ -1,5 +1,6 @@
 import '!style-loader!css-loader!postcss-loader!tailwindcss/tailwind.css';
 import '../src/global.css';
+import "nes.css/css/nes.min.css";
 
 const preview = {
   parameters: {

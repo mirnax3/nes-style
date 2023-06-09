@@ -1,15 +1,20 @@
 import React from 'react';
 import './App.css';
 import './global.css';
+import "nes.css/css/nes.min.css";
 import { Button } from "./components/Button";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <html>
+      <head title="App">
+        <title>MirioUI</title>
+      </head>
+      <body>
         <Button onClick={() => null} label="button" />
-      </header>
-    </div>
+      </body>
+    </html>
+
   );
 }
 
