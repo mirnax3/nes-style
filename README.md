@@ -1,3 +1,3 @@
 # mirioui
 
-it's a-me, mirio!
+it's a-me, mirioui!
