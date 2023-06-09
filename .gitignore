@@ -25,3 +25,6 @@ yarn-error.log*
 # JetBrains
 .idea/
 /public/rss
+
+# Local Netlify folder
+.netlify
