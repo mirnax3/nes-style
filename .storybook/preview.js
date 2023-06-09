@@ -1,5 +1,5 @@
+import '!style-loader!css-loader!postcss-loader!tailwindcss/tailwind.css';
 import '../src/global.css';
-import 'tailwindcss/tailwind.css';
 
 const preview = {
   parameters: {
