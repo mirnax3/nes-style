@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import './global.css';
 import "nes.css/css/nes.min.css";
 import { Button } from "./components/Button";
