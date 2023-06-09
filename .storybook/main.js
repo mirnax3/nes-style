@@ -1,8 +1,4 @@
 module.exports = {
-  // core: {
-  //   builder: 'webpack5',
-  //   disableTelemetry: true
-  // },
   framework: {
     name: "@storybook/react-webpack5",
     options: {},
@@ -22,9 +18,4 @@ module.exports = {
       }
     }
   ],
-  // webpackFinal: async (config) => {
-  //   config.resolve.modules = [...(config.resolve.modules || []), path.resolve(__dirname, '../src')];
-  //
-  //   return config;
-  // },
 }
