@@ -1,6 +1,7 @@
-import type { Preview } from "@storybook/react";
+import '!style-loader!css-loader!postcss-loader!tailwindcss/tailwind.css';
+import '../src/global.css';
 
-const preview: Preview = {
+const preview = {
   parameters: {
     actions: { argTypesRegex: "^on[A-Z].*" },
     controls: {

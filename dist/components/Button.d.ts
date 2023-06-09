@@ -1,11 +1,5 @@
-import * as React from "react";
-type ButtonStyle = {
-    [property: string]: string;
-};
-export interface ButtonProps {
+export type ButtonProps = {
     label: string;
-    style?: ButtonStyle;
     onClick: () => void;
-}
-declare const Button: React.FunctionComponent<ButtonProps>;
-export default Button;
+};
+export declare const Button: ({ label, onClick }: ButtonProps) => import("react/jsx-runtime").JSX.Element;
