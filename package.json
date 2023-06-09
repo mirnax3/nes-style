@@ -1,6 +1,6 @@
 {
   "name": "@mirnaplakalovic/mirioui",
-  "version": "0.2.9",
+  "version": "0.3.0",
   "description": "component system in progress",
   "author": "Mirna Plakalovic",
   "private": false,
@@ -10,7 +10,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build -s public"
+    "build-storybook": "storybook build",
+    "build-static-webapp":"expo build:web"
   },
   "eslintConfig": {
     "extends": [
