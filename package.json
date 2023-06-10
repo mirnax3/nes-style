@@ -1,7 +1,7 @@
 {
   "name": "@mirnaplakalovic/mirioui",
   "version": "0.3.1",
-  "description": "component system using TailwindCSS and Nes.css",
+  "description": "component system using TailwindCSS and NES.css",
   "author": "Mirna Plakalovic",
   "private": false,
   "scripts": {

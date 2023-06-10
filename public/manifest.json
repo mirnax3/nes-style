@@ -1,6 +1,6 @@
 {
   "short_name": "Nes Style",
-  "name": "Component system using TailwindCSS and Nes.css",
+  "name": "component system using TailwindCSS and NES.css",
   "icons": [
     {
       "src": "favicon.ico",
