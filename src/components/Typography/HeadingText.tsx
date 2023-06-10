@@ -7,7 +7,6 @@ import {
   TypographyProps,
   TypographyStyleProps
 } from './props';
-
 import {
   useTypographyAlignStyles,
   useTypographyColorStyles,

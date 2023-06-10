@@ -11,13 +11,5 @@ module.exports = {
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
     '@storybook/addon-links'
-  ],
-  webpackFinal: async (config) => {
-    config.resolve.modules = [...(config.resolve.modules || []), path.resolve(__dirname, '../src')];
-
-    return config;
-  },
-  typescript: {
-    reactDocgen: 'react-docgen'
-  }
+  ]
 };
