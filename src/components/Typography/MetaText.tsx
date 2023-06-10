@@ -5,12 +5,15 @@ import {
   TypographyColorProps,
   TypographyMakeStyleProps,
   TypographyProps,
-  TypographyStyleProps,
+  TypographyStyleProps
+} from './props';
+
+import {
   useTypographyAlignStyles,
   useTypographyColorStyles,
   useTypographyWhitespaceStyles,
   useWrapperStyles
-} from './index';
+} from './styles';
 
 export type MetaTextProps = ComponentProps<'h6'> &
   TypographyProps &
