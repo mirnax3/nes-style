@@ -6,7 +6,7 @@ import {
   TypographyColorProps,
   TypographyWhitespaceProps,
   TypographyWrapperProps
-} from './index';
+} from './props';
 
 export const useTypographyColorStyles = ({
   color,
