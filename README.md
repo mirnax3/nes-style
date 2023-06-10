@@ -1,3 +1,3 @@
 # NES Style
 
-component system using TailwindCSS and NES.css
+Component system using TailwindCSS and NES.css
