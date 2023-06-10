@@ -11,7 +11,9 @@
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "build-static-webapp": "expo build:web"
+    "build-static-webapp": "expo build:web",
+    "prettier:fix": "prettier --write src/**/*",
+    "lint": "eslint --ext .ts,.tsx src"
   },
   "eslintConfig": {
     "extends": [
@@ -25,6 +27,7 @@
     "@babel/preset-react": "^7.22.5",
     "@babel/preset-typescript": "^7.22.5",
     "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-eslint": "^9.0.4",
     "@rollup/plugin-node-resolve": "^15.1.0",
     "@storybook/addon-essentials": "^7.0.20",
     "@storybook/addon-interactions": "^7.0.20",
@@ -44,9 +47,20 @@
     "@types/react-dom": "^18.2.4",
     "autoprefixer": "^10.4.14",
     "babel-plugin-named-exports-order": "^0.0.2",
+    "eslint": "^8.42.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-local-rules": "^1.3.2",
+    "eslint-plugin-lodash": "^7.4.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-storybook": "^0.6.12",
     "jsx-runtime": "^1.2.0",
+    "lint-staged": "^13.2.2",
     "postcss": "^8.4.24",
+    "prettier": "^2.8.8",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -64,9 +78,9 @@
   "peerDependencies": {
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
+    "nes.css": "^2.3.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "nes.css": "^2.3.0"
+    "react-dom": "^18.2.0"
   },
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -84,6 +98,11 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "lint-staged": {
+    "./**/*.{ts,tsx}": [
+      "eslint --fix"
     ]
   }
 }
