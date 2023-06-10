@@ -12,6 +12,9 @@
 /dist
 /build
 
+# Storybook
+storybook-static
+
 # misc
 .DS_Store
 .env.local
@@ -29,8 +32,3 @@ yarn-error.log*
 
 # local Netlify folder
 .netlify
-
-# module output
-.dist/
-
-storybook-static
