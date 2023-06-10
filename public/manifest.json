@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "NES Style",
+  "name": "component system using TailwindCSS and NES.css",
   "icons": [
     {
       "src": "favicon.ico",

@@ -1,20 +1,14 @@
 import React from 'react';
-import './App.css';
 import './global.css';
 import "nes.css/css/nes.min.css";
-import { Button } from "./components/Button";
 
 function App() {
   return (
-    <html>
-      <head title="App">
-        <title>MirioUI</title>
-      </head>
-      <body>
-        <Button onClick={() => null} label="button" />
-      </body>
-    </html>
-
+    <main>
+      <div className="p-4">
+        <h1>NES Style</h1>
+      </div>
+    </main>
   );
 }
 
