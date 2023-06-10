@@ -1,6 +1,7 @@
 import { PanelBasic } from 'components/layout/Panel/PanelBasic';
 import { PanelItem } from 'components/layout/Panel/PanelItem';
-import { HeadingText, MetaText } from 'components/Typography';
+import { HeadingText } from 'components/Typography/HeadingText';
+import { MetaText } from 'components/Typography/MetaText';
 import { memo } from 'react';
 
 const TypefaceCard = memo(() => {

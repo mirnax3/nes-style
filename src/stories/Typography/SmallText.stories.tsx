@@ -1,12 +1,12 @@
-import { Meta, StoryFn } from '@storybook/react';
+import { StoryFn } from '@storybook/react';
 import { SmallText, SmallTextProps } from 'components/Typography/SmallText';
 import React from 'react';
 import { SmallTextArgs } from 'stories/Typography/args';
 
 export default {
-  title: 'Theme/Typography/SmallText',
+  title: 'Components/Typography/SmallText',
   component: SmallText
-} as Meta;
+};
 
 const Template: StoryFn<SmallTextProps> = (args) => <SmallText {...args} />;
 

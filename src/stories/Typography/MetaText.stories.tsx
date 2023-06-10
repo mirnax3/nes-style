@@ -1,12 +1,12 @@
-import { Meta, StoryFn } from '@storybook/react';
+import { StoryFn } from '@storybook/react';
 import { MetaText, MetaTextProps } from 'components/Typography/MetaText';
 import React from 'react';
 import { MetaTextArgs } from 'stories/Typography/args';
 
 export default {
-  title: 'Theme/Typography/MetaText',
+  title: 'Components/Typography/MetaText',
   component: MetaText
-} as Meta;
+};
 
 const Template: StoryFn<MetaTextProps> = (args) => <MetaText {...args} />;
 
