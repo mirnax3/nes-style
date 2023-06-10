@@ -1,3 +1,3 @@
-# mirioui
+# NES Style
 
-it's a-me, mirioui!
+component system using TailwindCSS and NES.css
