@@ -10,7 +10,7 @@ import {
   useTypographyColorStyles,
   useTypographyWhitespaceStyles,
   useWrapperStyles
-} from './';
+} from './index';
 
 export type MetaTextProps = ComponentProps<'h6'> &
   TypographyProps &

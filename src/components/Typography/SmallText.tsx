@@ -10,7 +10,7 @@ import {
   useTypographyColorStyles,
   useTypographyWhitespaceStyles,
   useWrapperStyles
-} from './';
+} from './index';
 
 export type SmallTextProps = ComponentProps<'p'> & TypographyProps & TypographyStyleProps;
 

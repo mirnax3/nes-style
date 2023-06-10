@@ -10,7 +10,7 @@ import {
   useTypographyColorStyles,
   useTypographyWhitespaceStyles,
   useWrapperStyles
-} from './';
+} from './index';
 
 export type HeadingTextProps = ComponentProps<'h1'> &
   TypographyProps &
