@@ -6,7 +6,7 @@ function App() {
   return (
     <main>
       <div className="p-4">
-        <h1>nes style</h1>
+        <h1>NES Style</h1>
       </div>
     </main>
   );
