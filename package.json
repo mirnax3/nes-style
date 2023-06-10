@@ -1,6 +1,6 @@
 {
-  "name": "@mirnaplakalovic/nes-style",
-  "version": "0.1.0",
+  "name": "@mirnaplakalovic/mirioui",
+  "version": "0.3.1",
   "description": "component system using TailwindCSS and Nes.css",
   "author": "Mirna Plakalovic",
   "private": false,
