@@ -3,7 +3,6 @@ const { fontSize } = require('tailwindcss/defaultTheme');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/global.css'],
   purge: ['./src/components/**/*.@(ts|tsx)', './src/stories/**/*.@(ts|tsx)'],
   plugins: [],
   theme: {
