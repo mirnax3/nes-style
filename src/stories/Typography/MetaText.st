@@ -1,7 +1,7 @@
 import { StoryFn } from '@storybook/react';
 import { MetaText, MetaTextProps } from 'components/Typography/MetaText';
 import React from 'react';
-import { MetaTextArgs } from 'stories/Typography/args';
+import { MetaTextArgs } from 'stories/Typography/args.st';
 
 export default {
   title: 'Components/Typography/MetaText',

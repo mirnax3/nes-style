@@ -1,7 +1,7 @@
 import { StoryFn } from '@storybook/react';
 import { BodyText, BodyTextProps } from 'components/Typography/BodyText';
 import React from 'react';
-import { BodyTextArgs } from 'stories/Typography/args';
+import { BodyTextArgs } from 'stories/Typography/args.st';
 
 export default {
   title: 'Components/Typography/BodyText',

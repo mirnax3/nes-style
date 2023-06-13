@@ -1,7 +1,7 @@
 import { StoryFn } from '@storybook/react';
 import { SmallText, SmallTextProps } from 'components/Typography/SmallText';
 import React from 'react';
-import { SmallTextArgs } from 'stories/Typography/args';
+import { SmallTextArgs } from 'stories/Typography/args.st';
 
 export default {
   title: 'Components/Typography/SmallText',
