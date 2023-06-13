@@ -25,6 +25,7 @@ const hasValidSize = ({ size = 'XL' }: Pick<HeadingTextProps, 'size'>) =>
 
 const useStyles = makeStyles<HeadingTextProps & TypographyMakeStyleProps>()({
   root: (props) => [
+    'font-primary',
     {
       'text-4xl md:text-6xl font-bold': props?.size === 'XL',
       'tracking-tight md:leading-tight': props?.size === 'XL',

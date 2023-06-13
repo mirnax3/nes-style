@@ -18,6 +18,7 @@ export type SmallTextProps = ComponentProps<'p'> & TypographyProps & TypographyS
 
 const useStyles = makeStyles<SmallTextProps & TypographyMakeStyleProps>()({
   root: (props) => [
+    'font-secondary',
     'text-smallMobile md:text-small',
     {
       'font-medium': !props?.bold && !props?.thin,

@@ -1,19 +1,56 @@
-const colors = require('tailwindcss/colors')
+const colors = require('tailwindcss/colors');
 const { fontSize } = require('tailwindcss/defaultTheme');
-/** @type {import('tailwindcss').Config} */
 
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  purge: [
-    './src/components/**/*.@(ts|tsx)',
-    './src/stories/**/*.@(ts|tsx)'
-  ],
+  content: ['./src/global.css'],
+  purge: ['./src/components/**/*.@(ts|tsx)', './src/stories/**/*.@(ts|tsx)'],
   plugins: [],
   theme: {
     colors: {
       ...colors
     },
     fontSize: {
+      body: [
+        '16px',
+        {
+          lineHeight: '22px',
+          letterSpacing: '0.2px'
+        }
+      ],
+      bodyLarge: [
+        '18px',
+        {
+          lineHeight: '24px',
+          letterSpacing: '0.2px'
+        }
+      ],
+      small: [
+        '13px',
+        {
+          lineHeight: '18px',
+          letterSpacing: '0.2px'
+        }
+      ],
+      smallMobile: [
+        '12px',
+        {
+          lineHeight: '18px',
+          letterSpacing: '0.2px'
+        }
+      ],
+      meta: [
+        '14px',
+        {
+          lineHeight: '20px',
+          letterSpacing: '0.2px'
+        }
+      ],
       ...fontSize
+    },
+    fontFamily: {
+      primary: ['Press Start 2P', 'Arial', 'sans-serif'],
+      secondary: ['IBM Plex Mono', 'Arial', 'sans-serif']
     }
   },
   extend: {
@@ -91,4 +128,3 @@ module.exports = {
     ]
   }
 };
-

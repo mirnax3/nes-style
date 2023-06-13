@@ -22,14 +22,13 @@ export type MetaTextProps = ComponentProps<'h6'> &
 
 const useStyles = makeStyles<MetaTextProps & TypographyMakeStyleProps>()({
   root: (props) => [
+    'font-primary',
     'text-meta',
     {
       'font-medium': !props?.bold && !props?.thin,
       'font-semibold': props?.bold,
       'font-normal': props?.thin,
-      italic: props?.italic
-    },
-    {
+      italic: props?.italic,
       'hover:cursor-pointer': props?.as === 'label'
     },
     !props?.disableColorStyle && props?.colorClassName,

@@ -18,6 +18,7 @@ export type BodyTextProps = ComponentProps<'p'> & TypographyProps & TypographySt
 
 const useStyles = makeStyles<BodyTextProps & TypographyMakeStyleProps>()({
   root: (props) => [
+    'font-secondary',
     {
       'text-body': !props?.large,
       'text-bodyLarge': props?.large,
