@@ -8,8 +8,9 @@ export default {
 } as Meta;
 
 const Template: StoryFn<any> = (args) => <CheckboxComponent {...args} />;
+export const Checkbox = Template.bind({});
 
-export const Checkbox = Template.bind({
+Template.args = {
   checked: false,
   label: 'Label'
-});
+};
