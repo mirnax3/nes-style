@@ -1,17 +1,18 @@
 import { Meta, StoryFn } from '@storybook/react';
-import { Avatar } from 'components/Avatar';
+import { Avatar as AvatarComponent } from 'components/Avatar';
 import React from 'react';
 
 export default {
-  title: 'Components/Avatar',
-  component: Avatar
+  title: 'Icons/Avatar',
+  component: AvatarComponent
 } as Meta;
 
 const Template: StoryFn<any> = (args) => {
-  return <Avatar {...args} />;
+  return <AvatarComponent {...args} />;
 };
 
-export const Basic = Template.bind({});
-Basic.args = {
+export const Avatar = Template.bind({});
+
+Avatar.args = {
   className: 'nes-icon'
 };

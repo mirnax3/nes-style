@@ -1,17 +1,15 @@
 import { Meta, StoryFn } from '@storybook/react';
-import { NesIcon } from 'components/NesIcon';
+import { NesIcon as NesIconComponent } from 'components/NesIcon';
 import React from 'react';
 
 export default {
-  title: 'Components/NesIcon',
-  component: NesIcon
+  title: 'Icons/NesIcon',
+  component: NesIconComponent
 } as Meta;
 
-const Template: StoryFn<any> = (args) => {
-  return <NesIcon {...args} />;
-};
+const Template: StoryFn<any> = (args) => <NesIconComponent {...args} />;
+export const NesIcon = Template.bind({});
 
-export const Basic = Template.bind({});
-Basic.args = {
+NesIcon.args = {
   children: 'hi'
 };

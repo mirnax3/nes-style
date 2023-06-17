@@ -1,17 +1,15 @@
 import { Meta, StoryFn } from '@storybook/react';
-import { ControllerIcon } from 'components/ControllerIcon';
+import { ControllerIcon as ControllerIconComponent } from 'components/ControllerIcon';
 import React from 'react';
 
 export default {
-  title: 'Components/ControllerIcon',
-  component: ControllerIcon
+  title: 'Icons/ControllerIcon',
+  component: ControllerIconComponent
 } as Meta;
 
-const Template: StoryFn<any> = (args) => {
-  return <ControllerIcon {...args} />;
-};
+const Template: StoryFn<any> = (args) => <ControllerIconComponent {...args} />;
+export const ControllerIcon = Template.bind({});
 
-export const Basic = Template.bind({});
-Basic.args = {
+ControllerIcon.args = {
   children: 'hi'
 };
