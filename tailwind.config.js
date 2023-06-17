@@ -14,41 +14,6 @@ module.exports = {
       ...colors
     },
     fontSize: {
-      body: [
-        '16px',
-        {
-          lineHeight: '22px',
-          letterSpacing: '0.2px'
-        }
-      ],
-      bodyLarge: [
-        '18px',
-        {
-          lineHeight: '24px',
-          letterSpacing: '0.2px'
-        }
-      ],
-      small: [
-        '13px',
-        {
-          lineHeight: '18px',
-          letterSpacing: '0.2px'
-        }
-      ],
-      smallMobile: [
-        '12px',
-        {
-          lineHeight: '18px',
-          letterSpacing: '0.2px'
-        }
-      ],
-      meta: [
-        '14px',
-        {
-          lineHeight: '20px',
-          letterSpacing: '0.2px'
-        }
-      ],
       ...fontSize
     },
     fontFamily: {
