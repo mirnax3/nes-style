@@ -3,7 +3,7 @@ import { TextInput as TextInputComponent } from 'components/TextInput';
 import React from 'react';
 
 export default {
-  title: 'Components/TextInput',
+  title: 'Inputs/TextInput',
   component: TextInputComponent
 } as Meta;
 

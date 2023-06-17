@@ -3,7 +3,7 @@ import { Checkbox as CheckboxComponent } from 'components/Checkbox';
 import React from 'react';
 
 export default {
-  title: 'Components/Checkbox',
+  title: 'Inputs/Checkbox',
   component: CheckboxComponent
 } as Meta;
 

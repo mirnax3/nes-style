@@ -3,7 +3,7 @@ import { TextArea as TextAreaComponent } from 'components/TextArea';
 import React from 'react';
 
 export default {
-  title: 'Components/TextArea',
+  title: 'Inputs/TextArea',
   component: TextAreaComponent
 } as Meta;
 
