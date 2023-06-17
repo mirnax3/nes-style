@@ -1,14 +1,6 @@
 import { cva } from 'class-variance-authority';
-import { TypographyCustomIntent } from 'components/Typography/typographyVariantStyles';
 
-export type IntentType =
-  | 'primary'
-  | 'secondary'
-  | 'neutral'
-  | 'success'
-  | 'danger'
-  | 'info'
-  | CustomIntent;
+export type IntentType = 'primary' | 'secondary' | 'neutral' | 'success' | 'danger' | 'info';
 export type ModeType = 'default' | 'dark';
 export type InteractionType = 'hover' | 'active' | 'disabled';
 export type ProminenceType = 'default' | 'loud' | 'soft';
@@ -32,14 +24,6 @@ export type CompoundVariantsType = {
   compoundVariants: Array<CompoundVariantType>;
 };
 
-// custom intent styles
-export type CustomIntent = TypographyCustomIntent;
-export const customIntentStyles = {
-  // only Typography components
-  white: ['text-white'],
-  tmBlue: ['text-tmBlue']
-};
-
 export const defaultVariantStyles = {
   variants: {
     intent: {
@@ -48,8 +32,7 @@ export const defaultVariantStyles = {
       neutral: [''],
       success: [''],
       danger: [''],
-      info: [''],
-      ...customIntentStyles
+      info: ['']
     },
     mode: {
       default: [''],

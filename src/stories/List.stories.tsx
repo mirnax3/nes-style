@@ -1,5 +1,5 @@
 import { Meta, StoryFn } from '@storybook/react';
-import { List as ListComponent } from 'components/nes';
+import { List as ListComponent } from 'components/List';
 import React from 'react';
 
 export default {

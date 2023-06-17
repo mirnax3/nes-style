@@ -1,5 +1,5 @@
 import { Meta, StoryFn } from '@storybook/react';
-import { Sprite } from 'components/nes';
+import { Sprite } from 'components/Sprite';
 import React from 'react';
 
 export default {

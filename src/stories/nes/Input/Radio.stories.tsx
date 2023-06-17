@@ -1,5 +1,5 @@
 import { Meta, StoryFn } from '@storybook/react';
-import { Radios } from 'components/nes';
+import { Radios } from 'components/Radios';
 import React from 'react';
 
 export default {

@@ -1,5 +1,5 @@
 import { Meta, StoryFn } from '@storybook/react';
-import { Checkbox as CheckboxComponent } from 'components/nes';
+import { Checkbox as CheckboxComponent } from 'components/Checkbox';
 import React from 'react';
 
 export default {

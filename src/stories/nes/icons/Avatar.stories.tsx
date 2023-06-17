@@ -1,5 +1,5 @@
 import { Meta, StoryFn } from '@storybook/react';
-import { Avatar } from 'components/nes';
+import { Avatar } from 'components/Avatar';
 import React from 'react';
 
 export default {

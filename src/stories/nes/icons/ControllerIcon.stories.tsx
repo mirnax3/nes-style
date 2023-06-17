@@ -1,5 +1,5 @@
 import { Meta, StoryFn } from '@storybook/react';
-import { ControllerIcon } from 'components/nes';
+import { ControllerIcon } from 'components/ControllerIcon';
 import React from 'react';
 
 export default {

@@ -1,5 +1,5 @@
 import { Meta, StoryFn } from '@storybook/react';
-import { Button as ButtonComponent } from 'components/nes';
+import { Button as ButtonComponent } from 'components/Button';
 import React from 'react';
 
 export default {

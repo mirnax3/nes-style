@@ -1,5 +1,5 @@
 import { Meta, StoryFn } from '@storybook/react';
-import { Container as ContainerComponent } from 'components/nes';
+import { Container as ContainerComponent } from 'components/Container';
 import React from 'react';
 
 export default {

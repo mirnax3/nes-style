@@ -1,5 +1,5 @@
 import { Meta, StoryFn } from '@storybook/react';
-import { NesIcon } from 'components/nes';
+import { NesIcon } from 'components/NesIcon';
 import React from 'react';
 
 export default {
