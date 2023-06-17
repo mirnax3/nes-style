@@ -1,13 +1,13 @@
-import { Meta, Story } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import { Sprite } from 'components/nes';
 import React from 'react';
 
 export default {
-  title: 'Components/Nes/Sprite',
+  title: 'Components/Sprite',
   component: Sprite
 } as Meta;
 
-const Template: Story<any> = (args) => {
+const Template: StoryFn<any> = (args) => {
   return <Sprite {...args} />;
 };
 

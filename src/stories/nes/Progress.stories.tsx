@@ -1,17 +1,20 @@
-import { Meta, Story } from '@storybook/react';
-import { Progress } from 'components/nes';
+import { Meta, StoryFn } from '@storybook/react';
+import { Progress as ProgressComponent } from 'components/nes';
 import React from 'react';
 
 export default {
-  title: 'Components/Nes/Progress',
-  component: Progress
+  title: 'Components/Progress',
+  component: ProgressComponent
 } as Meta;
 
-const Template: Story<any> = (args) => {
-  return <Progress {...args} />;
-};
+const Template: StoryFn<any> = (args) => <ProgressComponent {...args} />;
+export const Progress = Template.bind({});
 
-export const Basic = Template.bind({});
-Basic.args = {
-  children: 'hi'
+Progress.args = {
+  value: 20,
+  max: 100,
+  primary: false,
+  success: false,
+  warning: false,
+  error: false
 };

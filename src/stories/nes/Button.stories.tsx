@@ -1,19 +1,16 @@
-import { Meta, Story } from '@storybook/react';
-import { Button } from 'components/nes';
+import { Meta, StoryFn } from '@storybook/react';
+import { Button as ButtonComponent } from 'components/nes';
 import React from 'react';
 
 export default {
-  title: 'Components/Nes/Button',
-  component: Button
+  title: 'Components/Button',
+  component: ButtonComponent
 } as Meta;
 
-const Template: Story<any> = (args) => {
-  return <Button {...args} />;
-};
+const Template: StoryFn<any> = (args) => <ButtonComponent {...args} />;
+export const Button = Template.bind({});
 
-export const Basic = Template.bind({});
-
-Basic.args = {
+Button.args = {
   children: 'button',
   success: false,
   error: false,

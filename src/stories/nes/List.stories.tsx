@@ -1,17 +1,23 @@
-import { Meta, Story } from '@storybook/react';
-import { List } from 'components/nes';
+import { Meta, StoryFn } from '@storybook/react';
+import { List as ListComponent } from 'components/nes';
 import React from 'react';
 
 export default {
-  title: 'Components/Nes/List',
-  component: List
+  title: 'Components/List',
+  component: ListComponent
 } as Meta;
 
-const Template: Story<any> = (args) => {
-  return <List {...args} />;
-};
+const Template: StoryFn<any> = (args) => <ListComponent {...args} />;
+export const List = Template.bind({});
 
-export const Basic = Template.bind({});
-Basic.args = {
-  children: 'hi'
+List.args = {
+  solid: true,
+  children: (
+    <div>
+      <ul>
+        <li>hi</li>
+        <li>bye</li>
+      </ul>
+    </div>
+  )
 };

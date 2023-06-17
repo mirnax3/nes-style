@@ -1,13 +1,13 @@
-import { Meta, Story } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import { ControllerIcon } from 'components/nes';
 import React from 'react';
 
 export default {
-  title: 'Components/Nes/ControllerIcon',
+  title: 'Components/ControllerIcon',
   component: ControllerIcon
 } as Meta;
 
-const Template: Story<any> = (args) => {
+const Template: StoryFn<any> = (args) => {
   return <ControllerIcon {...args} />;
 };
 

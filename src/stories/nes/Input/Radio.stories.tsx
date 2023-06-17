@@ -1,4 +1,4 @@
-import { Meta, Story } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import { Radios } from 'components/nes';
 import React from 'react';
 
@@ -7,7 +7,7 @@ export default {
   component: Radios
 } as Meta;
 
-const Template: Story<any> = (args) => {
+const Template: StoryFn<any> = (args) => {
   return <Radios {...args} />;
 };
 
