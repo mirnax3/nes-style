@@ -1,9 +1,9 @@
 {
   "name": "@mirnaplakalovic/nes-style",
-  "version": "0.1.2",
+  "version": "0.1.0",
   "description": "component system using TailwindCSS and NES.css",
   "author": "Mirna Plakalovic",
-  "private": false,
+  "private": true,
   "scripts": {
     "dev": "react-scripts start",
     "build": "rollup -c",

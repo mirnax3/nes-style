@@ -1,10 +1,11 @@
 export type ColorInteractionType = { interaction: 'default' | 'hover' | 'active' | 'disabled' };
 export type ColorProminenceType = { prominence: 'default' | 'strong' | 'weak' };
+export type ColorUsageType = { usage: 'background' | 'border' | 'icon' | 'text' };
+export type ColorModeType = { mode: 'default' | 'dark' };
+
 export type ColorSentimentType = {
   sentiment: 'primary' | 'secondary' | 'neutral' | 'success' | 'info' | 'danger';
 };
-export type ColorUsageType = { usage: 'background' | 'border' | 'icon' | 'text' };
-export type ColorModeType = { mode: 'default' | 'dark' };
 
 export type ColorPalettesItemType = {
   color: string;
