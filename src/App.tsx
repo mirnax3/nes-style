@@ -1,6 +1,7 @@
 import 'nes.css/css/nes.min.css';
-import React from 'react';
 import 'styles/global.css';
+
+import React from 'react';
 
 function App() {
   return (
