@@ -1,5 +1,5 @@
 import { Meta, StoryFn } from '@storybook/react';
-import {Progress as ProgressComponent, ProgressProps} from 'components/Progress';
+import { Progress as ProgressComponent, ProgressProps } from 'components/Progress';
 import React from 'react';
 
 export default {

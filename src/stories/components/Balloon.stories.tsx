@@ -1,5 +1,5 @@
 import { Meta, StoryFn } from '@storybook/react';
-import {Balloon as BalloonComponent, BalloonProps} from 'components/Balloon';
+import { Balloon as BalloonComponent, BalloonProps } from 'components/Balloon';
 import React from 'react';
 
 export default {

@@ -1,5 +1,5 @@
 import { Meta, StoryFn } from '@storybook/react';
-import {Table as TableComponent, TableProps} from 'components/Table';
+import { Table as TableComponent, TableProps } from 'components/Table';
 import React from 'react';
 
 export default {
