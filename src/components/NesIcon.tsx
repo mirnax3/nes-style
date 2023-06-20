@@ -28,7 +28,7 @@ export type NesIconProps = {
 } & ParentClassNameProp;
 
 export const NesIcon: React.FC<NesIconProps> = React.memo(
-  ({ className, type, small, medium, large, empty, transparent, half, ...other }: IconProps) => (
+  ({ className, type, small, medium, large, empty, transparent, half, ...other }: NesIconProps) => (
     <i
       className={classNames(className, 'nes-icon', type, {
         'is-small': small,
