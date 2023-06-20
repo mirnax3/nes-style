@@ -7,7 +7,11 @@ export default {
   component: ListComponent
 } as Meta;
 
-const Template: StoryFn<any> = (args) => <ListComponent {...args} />;
+const Template: StoryFn<any> = (args) => (
+  <div className="px-4">
+    <ListComponent {...args} />
+  </div>
+);
 export const List = Template.bind({});
 
 List.args = {
