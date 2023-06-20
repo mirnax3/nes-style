@@ -1,7 +1,7 @@
 import classNames from 'clsx';
 import * as React from 'react';
 
-export type IconProps = {
+export type NesIconProps = {
   type:
     | 'heart'
     | 'star'
@@ -27,8 +27,8 @@ export type IconProps = {
   half?: boolean;
 } & ParentClassNameProp;
 
-export const NesIcon: React.FC<IconProps> = React.memo(
-  ({ className, type, small, medium, large, empty, transparent, half, ...other }: IconProps) => (
+export const NesIcon: React.FC<NesIconProps> = React.memo(
+  ({ className, type, small, medium, large, empty, transparent, half, ...other }: NesIconProps) => (
     <i
       className={classNames(className, 'nes-icon', type, {
         'is-small': small,

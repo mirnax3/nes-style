@@ -1,5 +1,5 @@
 import { Meta, StoryFn } from '@storybook/react';
-import { Sprite as SpriteComponent } from 'components/Sprite';
+import { Sprite as SpriteComponent, SpriteProps } from 'components/Sprite';
 import React from 'react';
 
 export default {
@@ -7,9 +7,9 @@ export default {
   component: SpriteComponent
 } as Meta;
 
-const Template: StoryFn<any> = (args) => <SpriteComponent {...args} />;
+const Template: StoryFn<SpriteProps> = (args) => <SpriteComponent {...args} />;
 export const Sprite = Template.bind({});
 
 Sprite.args = {
-  children: 'hi'
+  sprite: 'pokeball'
 };

@@ -1,5 +1,5 @@
 import { Meta, StoryFn } from '@storybook/react';
-import { Avatar as AvatarComponent } from 'components/Avatar';
+import { Avatar as AvatarComponent, AvatarProps } from 'components/Avatar';
 import React from 'react';
 
 export default {
@@ -7,12 +7,16 @@ export default {
   component: AvatarComponent
 } as Meta;
 
-const Template: StoryFn<any> = (args) => {
+const Template: StoryFn<AvatarProps> = (args) => {
   return <AvatarComponent {...args} />;
 };
 
 export const Avatar = Template.bind({});
 
 Avatar.args = {
-  className: 'nes-icon'
+  small: false,
+  medium: false,
+  large: true,
+  rounded: true,
+  src: 'https://placekitten.com/g/200/200'
 };

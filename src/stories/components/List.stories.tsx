@@ -1,5 +1,5 @@
 import { Meta, StoryFn } from '@storybook/react';
-import { List as ListComponent } from 'components/List';
+import { List as ListComponent, ListProps } from 'components/List';
 import React from 'react';
 
 export default {
@@ -7,7 +7,11 @@ export default {
   component: ListComponent
 } as Meta;
 
-const Template: StoryFn<any> = (args) => <ListComponent {...args} />;
+const Template: StoryFn<ListProps> = (args) => (
+  <div className="px-4">
+    <ListComponent {...args} />
+  </div>
+);
 export const List = Template.bind({});
 
 List.args = {

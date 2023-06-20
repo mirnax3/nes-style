@@ -1,5 +1,5 @@
 import { Meta, StoryFn } from '@storybook/react';
-import { Balloon as BalloonComponent } from 'components/Balloon';
+import { Balloon as BalloonComponent, BalloonProps } from 'components/Balloon';
 import React from 'react';
 
 export default {
@@ -7,7 +7,7 @@ export default {
   component: BalloonComponent
 } as Meta;
 
-const Template: StoryFn<any> = (args) => (
+const Template: StoryFn<BalloonProps> = (args) => (
   <BalloonComponent {...args}>{args?.children}</BalloonComponent>
 );
 

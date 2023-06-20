@@ -1,5 +1,5 @@
 import { Meta, StoryFn } from '@storybook/react';
-import { Table as TableComponent } from 'components/Table';
+import { Table as TableComponent, TableProps } from 'components/Table';
 import React from 'react';
 
 export default {
@@ -7,7 +7,7 @@ export default {
   component: TableComponent
 } as Meta;
 
-const Template: StoryFn<any> = (args) => <TableComponent {...args} />;
+const Template: StoryFn<TableProps> = (args) => <TableComponent {...args} />;
 export const Table = Template.bind({});
 
 Table.args = {
