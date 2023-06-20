@@ -11,5 +11,5 @@ const Template: StoryFn<any> = (args) => <ControllerIconComponent {...args} />;
 export const ControllerIcon = Template.bind({});
 
 ControllerIcon.args = {
-  children: 'hi'
+  controller: 'snes'
 };

@@ -14,5 +14,9 @@ const Template: StoryFn<any> = (args) => {
 export const Avatar = Template.bind({});
 
 Avatar.args = {
-  className: 'nes-icon'
+  small: false,
+  medium: false,
+  large: true,
+  rounded: true,
+  src: 'https://placekitten.com/g/200/200'
 };

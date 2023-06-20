@@ -11,5 +11,11 @@ const Template: StoryFn<any> = (args) => <NesIconComponent {...args} />;
 export const NesIcon = Template.bind({});
 
 NesIcon.args = {
-  children: 'hi'
+  type: 'trophy',
+  small: false,
+  medium: false,
+  large: false,
+  empty: false,
+  transparent: false,
+  half: false
 };
