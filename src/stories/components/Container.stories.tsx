@@ -1,5 +1,5 @@
 import { Meta, StoryFn } from '@storybook/react';
-import { Container as ContainerComponent } from 'components/Container';
+import { Container as ContainerComponent, ContainerProps } from 'components/Container';
 import React from 'react';
 
 export default {
@@ -7,7 +7,7 @@ export default {
   component: ContainerComponent
 } as Meta;
 
-const Template: StoryFn<any> = (args) => <ContainerComponent {...args} />;
+const Template: StoryFn<ContainerProps> = (args) => <ContainerComponent {...args} />;
 export const Container = Template.bind({});
 
 Container.args = {

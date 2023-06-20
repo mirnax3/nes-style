@@ -1,5 +1,5 @@
 import { Meta, StoryFn } from '@storybook/react';
-import { TextArea as TextAreaComponent } from 'components/TextArea';
+import {TextArea as TextAreaComponent, TextAreaProps} from 'components/TextArea';
 import React from 'react';
 
 export default {
@@ -7,7 +7,7 @@ export default {
   component: TextAreaComponent
 } as Meta;
 
-const Template: StoryFn<any> = (args) => <TextAreaComponent {...args} />;
+const Template: StoryFn<TextAreaProps> = (args) => <TextAreaComponent {...args} />;
 export const TextArea = Template.bind({});
 
 TextArea.args = {

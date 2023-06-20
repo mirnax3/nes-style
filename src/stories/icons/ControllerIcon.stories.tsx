@@ -1,5 +1,5 @@
 import { Meta, StoryFn } from '@storybook/react';
-import { ControllerIcon as ControllerIconComponent } from 'components/ControllerIcon';
+import {ControllerIcon as ControllerIconComponent, ControllerIconProps} from 'components/ControllerIcon';
 import React from 'react';
 
 export default {
@@ -7,7 +7,7 @@ export default {
   component: ControllerIconComponent
 } as Meta;
 
-const Template: StoryFn<any> = (args) => <ControllerIconComponent {...args} />;
+const Template: StoryFn<ControllerIconProps> = (args) => <ControllerIconComponent {...args} />;
 export const ControllerIcon = Template.bind({});
 
 ControllerIcon.args = {

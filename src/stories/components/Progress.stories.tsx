@@ -1,5 +1,5 @@
 import { Meta, StoryFn } from '@storybook/react';
-import { Progress as ProgressComponent } from 'components/Progress';
+import {Progress as ProgressComponent, ProgressProps} from 'components/Progress';
 import React from 'react';
 
 export default {
@@ -7,7 +7,7 @@ export default {
   component: ProgressComponent
 } as Meta;
 
-const Template: StoryFn<any> = (args) => <ProgressComponent {...args} />;
+const Template: StoryFn<ProgressProps> = (args) => <ProgressComponent {...args} />;
 export const Progress = Template.bind({});
 
 Progress.args = {

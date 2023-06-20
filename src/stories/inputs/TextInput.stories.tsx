@@ -1,5 +1,5 @@
 import { Meta, StoryFn } from '@storybook/react';
-import { TextInput as TextInputComponent } from 'components/TextInput';
+import {TextInput as TextInputComponent, TextInputProps} from 'components/TextInput';
 import React from 'react';
 
 export default {
@@ -7,7 +7,7 @@ export default {
   component: TextInputComponent
 } as Meta;
 
-const Template: StoryFn<any> = (args) => <TextInputComponent {...args} />;
+const Template: StoryFn<TextInputProps> = (args) => <TextInputComponent {...args} />;
 export const TextInput = Template.bind({});
 
 TextInput.args = {
