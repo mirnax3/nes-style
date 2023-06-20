@@ -1,6 +1,6 @@
 {
   "name": "@mirnaplakalovic/nes-style",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "component system using TailwindCSS and NES.css",
   "author": "Mirna Plakalovic",
   "private": false,
@@ -29,6 +29,7 @@
     "@rollup/plugin-commonjs": "^25.0.0",
     "@rollup/plugin-eslint": "^9.0.4",
     "@rollup/plugin-node-resolve": "^15.1.0",
+    "@storybook/addon-docs": "^7.0.20",
     "@storybook/addon-essentials": "^7.0.20",
     "@storybook/addon-interactions": "^7.0.20",
     "@storybook/addon-links": "^7.0.20",
@@ -47,6 +48,7 @@
     "@types/react-dom": "^18.2.4",
     "autoprefixer": "^10.4.14",
     "babel-plugin-named-exports-order": "^0.0.2",
+    "clsx": "^1.2.1",
     "eslint": "^8.42.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-jsx-a11y": "^6.7.1",
@@ -78,7 +80,6 @@
   "peerDependencies": {
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
-    "class-variance-authority": "^0.6.0",
     "nes.css": "^2.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -105,8 +106,5 @@
     "./**/*.{ts,tsx}": [
       "eslint --fix"
     ]
-  },
-  "dependencies": {
-    "@storybook/addon-docs": "^7.0.20"
   }
 }
