@@ -11,6 +11,7 @@ root.render(
   </React.StrictMode>
 );
 
+// export * from 'components/Radio';
 export { Avatar } from 'components/Avatar';
 export { Balloon } from 'components/Balloon';
 export { Button } from 'components/Button';
@@ -20,12 +21,10 @@ export { ControllerIcon } from 'components/ControllerIcon';
 export { List } from 'components/List';
 export { NesIcon } from 'components/NesIcon';
 export { Progress } from 'components/Progress';
-// export * from 'components/Radios';
 export { Sprite } from 'components/Sprite';
 export { Table } from 'components/Table';
 export { TextArea } from 'components/TextArea';
 export { TextInput } from 'components/TextInput';
-
 export type { AvatarProps } from 'components/Avatar';
 export type { BalloonProps } from 'components/Balloon';
 export type { ButtonProps } from 'components/Button';
