@@ -23,7 +23,7 @@ const NesButton = (props) => <Button {...props} />;
 
 ----------------------
 
-### Upcoming
+## In progress
 * NES style text component
 * intrinsic HTML attributes to NES components
 * radio input component
