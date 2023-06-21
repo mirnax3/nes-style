@@ -2,7 +2,7 @@
 
 component system using TailwindCSS and NES.css
 
-[@mirnaplakalovic/nes-style](https://www.npmjs.com/package/@mirnaplakalovic/nes-style)
+[npm](https://www.npmjs.com/package/@mirnaplakalovic/nes-style)
 
 [storybook](https://www.nes.style)
 
@@ -18,12 +18,14 @@ component system using TailwindCSS and NES.css
 ```
 import { Button } from '@mirnaplakalovic/nes-style'
 
-const NesButton = <Button {...props} />;
+const NesButton = (props) => <Button {...props} />;
 ```
 ----------------------
 
 ### Upcoming
 * NES style text component
 * intrinsic HTML attributes to NES components
+* radio input component
+* select input group components
 
-Let me know what you think by sending a message, comment, or pull request!
+Let me know what you think (if you want).
