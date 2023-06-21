@@ -13,13 +13,14 @@ component system using TailwindCSS and NES.css
 
 ## Basic usage
 
-### import components into React app
+### Importing components in React
 
 ```
 import { Button } from '@mirnaplakalovic/nes-style'
 
 const NesButton = (props) => <Button {...props} />;
 ```
+
 ----------------------
 
 ### Upcoming
