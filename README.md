@@ -21,6 +21,12 @@ import { Button } from '@mirnaplakalovic/nes-style'
 const NesButton = (props) => <Button {...props} />;
 ```
 
+### Using Tailwind classes
+
+```
+<NesButton className="w-full p-2 my-2 whitespace-nowrap" />;
+```
+
 ----------------------
 
 ### Upcoming
