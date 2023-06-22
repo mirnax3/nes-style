@@ -8,7 +8,9 @@ This is component system most accurately described as a modern relic using Tailw
 
 ## Installing
 
-`npm install @mirnaplakalovic/nes-style`
+```
+npm install @mirnaplakalovic/nes-style
+```
 
 
 ## Basic usage
