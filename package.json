@@ -1,6 +1,6 @@
 {
-  "name": "@mirnaplakalovic/nes-style",
-  "version": "0.3.4",
+  "name": "@mirnax3/nes-style",
+  "version": "0.1.1",
   "description": "component system using TailwindCSS and NES.css",
   "author": "Mirna Plakalovic",
   "private": false,
