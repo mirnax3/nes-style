@@ -5,7 +5,6 @@
   "author": "Mirna Plakalovic",
   "private": false,
   "scripts": {
-    "dev": "react-scripts start",
     "build": "rollup -c",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
@@ -57,7 +56,6 @@
     "prettier": "^2.8.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
     "rollup": "^2.79.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
@@ -74,11 +72,6 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not op_mini all"
-  ],
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
