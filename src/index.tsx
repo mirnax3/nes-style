@@ -11,7 +11,6 @@ root.render(
   </React.StrictMode>
 );
 
-// export * from 'components/Radio';
 export { Avatar } from 'components/Avatar';
 export { Balloon } from 'components/Balloon';
 export { Button } from 'components/Button';
