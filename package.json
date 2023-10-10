@@ -74,6 +74,11 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ],
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
