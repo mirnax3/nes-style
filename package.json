@@ -5,13 +5,9 @@
   "author": "Mirna Plakalovic",
   "private": false,
   "scripts": {
-    "dev": "react-scripts start",
     "build": "rollup -c",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "build-static-webapp": "expo build:web",
     "prettier:fix": "prettier --write src/**/*",
     "lint": "eslint --ext .ts,.tsx src"
   },
@@ -39,10 +35,6 @@
     "@storybook/react": "^7.0.20",
     "@storybook/react-webpack5": "^7.0.20",
     "@storybook/testing-library": "^0.1.0",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
     "@types/node": "^16.18.34",
     "@types/react": "^18.2.7",
     "@types/react-dom": "^18.2.4",
@@ -60,13 +52,11 @@
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-storybook": "^0.6.12",
     "jsx-runtime": "^1.2.0",
-    "lint-staged": "^13.2.2",
+    "lint-staged": "^14.0.1",
     "postcss": "^8.4.24",
     "prettier": "^2.8.8",
-    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
     "rollup": "^2.79.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
@@ -74,7 +64,6 @@
     "storybook": "^7.0.20",
     "tailwindcss": "^3.3.2",
     "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4",
     "webpack": "^5.85.0"
   },
   "peerDependencies": {
@@ -90,18 +79,6 @@
   "files": [
     "dist"
   ],
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
   "lint-staged": {
     "./**/*.{ts,tsx}": [
       "eslint --fix"
