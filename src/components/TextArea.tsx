@@ -1,44 +1,27 @@
 import classNames from 'clsx';
+import { makeIntentStyles } from 'lib/makeIntentStyles';
 import * as React from 'react';
 
-export type TextAreaProps = {
-  label?: string;
-  placeholder?: string;
-  value?: string;
-  onChange?: () => void;
-  success?: boolean;
-  warning?: boolean;
-  error?: boolean;
-  labelInline?: boolean;
-} & ParentClassNameProp;
+import { TextInputProps as TextAreaProps } from './TextInput';
 
 export const TextArea: React.FC<TextAreaProps> = React.memo(
-  ({
-    label,
-    value,
-    onChange,
-    success,
-    warning,
-    error,
-    placeholder,
-    labelInline,
-    ...other
-  }: TextAreaProps) => (
-    <div className={classNames('nes-field', { 'is-inline': labelInline })}>
+  ({ label, value, onChange, intent, placeholder, inline, ...other }: TextAreaProps) => (
+    <div className={classNames('nes-field', { 'is-inline': inline })}>
       {label && <label>{label}</label>}
       <textarea
         value={value}
         onChange={onChange}
-        className={classNames('nes-textarea', {
-          'is-success': success,
-          'is-warning': warning,
-          'is-error': error
-        })}
+        className={classNames('nes-textarea', makeIntentStyles({ intent }))}
         placeholder={placeholder}
         {...other}
       />
     </div>
   )
 );
+
+TextArea.defaultProps = {
+  intent: 'primary',
+  placeholder: 'Start typing'
+};
 
 TextArea.displayName = 'NesTextArea';

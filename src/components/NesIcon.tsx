@@ -19,27 +19,30 @@ export type NesIconProps = {
     | 'linkedin'
     | 'close'
     | 'trophy';
-  small?: boolean;
-  medium?: boolean;
-  large?: boolean;
-  empty?: boolean;
-  transparent?: boolean;
-  half?: boolean;
-} & ParentClassNameProp;
+  isEmpty?: boolean;
+  isTransparent?: boolean;
+  isHalf?: boolean;
+} & ParentClassNameProp &
+  SizeProp;
 
 export const NesIcon: React.FC<NesIconProps> = React.memo(
-  ({ className, type, small, medium, large, empty, transparent, half, ...other }: NesIconProps) => (
+  ({ className, type, size, isEmpty, isTransparent, isHalf, ...other }: NesIconProps) => (
     <i
       className={classNames(className, 'nes-icon', type, {
-        'is-small': small,
-        'is-medium': medium,
-        'is-large': large,
-        'is-transparent': empty,
-        'is-empty': transparent,
-        'is-half': half
+        'is-small': size === 'SM',
+        'is-medium': size === 'MD',
+        'is-large': size === 'LG',
+        'is-transparent': isEmpty,
+        'is-empty': isTransparent,
+        'is-half': isHalf
       })}
       {...other}
     />
   )
 );
+
+NesIcon.defaultProps = {
+  type: 'heart'
+};
+
 NesIcon.displayName = 'NesIcon';

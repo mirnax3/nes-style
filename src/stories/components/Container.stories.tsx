@@ -14,6 +14,6 @@ Container.args = {
   title: 'balloon',
   dark: false,
   rounded: false,
-  centered: false,
+  center: false,
   children: 'hi'
 };

@@ -13,8 +13,6 @@ export const TextArea = Template.bind({});
 TextArea.args = {
   label: 'Label',
   placeholder: 'Placeholder',
-  success: false,
-  warning: false,
-  error: false,
-  labelInline: false
+  intent: 'primary',
+  inline: false
 };

@@ -4,7 +4,7 @@ import * as React from 'react';
 export type CheckboxProps = {
   checked?: boolean;
   label?: string;
-  onSelect?: () => void;
+  onSelect?: GenericHandler;
 } & ParentClassNameProp;
 
 export const Checkbox: React.FC<CheckboxProps> = React.memo(

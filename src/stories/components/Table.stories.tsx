@@ -11,8 +11,8 @@ const Template: StoryFn<TableProps> = (args) => <TableComponent {...args} />;
 export const Table = Template.bind({});
 
 Table.args = {
-  bordered: false,
-  centered: false,
+  hasBorder: false,
+  center: false,
   dark: false,
   children: (
     <table>

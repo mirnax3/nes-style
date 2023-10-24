@@ -15,4 +15,13 @@ declare global {
   type ClickEventProp = {
     onClick?: GenericHandler;
   };
+
+  type IntentProp = {
+    intent?: 'success' | 'warning' | 'error' | 'primary';
+  };
+
+  type DefaultSizeOptions = 'SM' | 'MD' | 'LG';
+  type SizeProp = {
+    size?: DefaultSizeOptions;
+  };
 }

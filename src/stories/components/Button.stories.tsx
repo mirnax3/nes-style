@@ -12,8 +12,6 @@ export const Button = Template.bind({});
 
 Button.args = {
   children: 'button',
-  primary: true,
-  success: false,
-  error: false,
+  intent: 'primary',
   disabled: false
 };

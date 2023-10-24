@@ -13,8 +13,6 @@ export const TextInput = Template.bind({});
 TextInput.args = {
   label: 'Label',
   placeholder: 'Placeholder',
-  success: false,
-  warning: false,
-  error: false,
-  labelInline: false
+  intent: 'primary',
+  inline: false
 };

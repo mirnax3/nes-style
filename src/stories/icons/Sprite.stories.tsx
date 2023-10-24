@@ -11,5 +11,5 @@ const Template: StoryFn<SpriteProps> = (args) => <SpriteComponent {...args} />;
 export const Sprite = Template.bind({});
 
 Sprite.args = {
-  sprite: 'pokeball'
+  type: 'pokeball'
 };

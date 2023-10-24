@@ -4,6 +4,7 @@ import * as React from 'react';
 export type RadioProps = {
   checked?: boolean;
   label?: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   value?: any;
   onClick: GenericHandler;
 } & ParentClassNameProp;

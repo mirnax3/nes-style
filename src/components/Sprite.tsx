@@ -2,7 +2,7 @@ import classNames from 'clsx';
 import * as React from 'react';
 
 export type SpriteProps = {
-  sprite:
+  type:
     | 'octocat'
     | 'mario'
     | 'ash'
@@ -17,8 +17,13 @@ export type SpriteProps = {
 } & ParentClassNameProp;
 
 export const Sprite: React.FC<SpriteProps> = React.memo(
-  ({ sprite, className, ...other }: SpriteProps) => (
-    <i className={classNames(className, `nes-${sprite}`)} {...other} />
+  ({ type, className, ...other }: SpriteProps) => (
+    <i className={classNames(className, `nes-${type}`)} {...other} />
   )
 );
+
+type Sprite = {
+  type: 'octocat';
+};
+
 Sprite.displayName = 'NesSprite';
