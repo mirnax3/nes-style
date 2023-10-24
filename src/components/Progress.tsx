@@ -15,7 +15,12 @@ export const Progress: React.FC<ProgressProps> = React.memo(
     <progress
       value={value}
       max={maximum}
-      className={classNames(className, 'nes-progress', makeIntentStyles({ intent }))}
+      className={classNames(
+        className,
+        'nes-progress',
+        makeIntentStyles({ intent }),
+        isPattern && 'is-pattern'
+      )}
       {...other}
     />
   )

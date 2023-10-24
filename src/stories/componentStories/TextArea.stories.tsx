@@ -1,5 +1,6 @@
 import { Meta, StoryFn } from '@storybook/react';
-import { TextArea as TextAreaComponent, TextAreaProps } from 'components/TextArea';
+import { TextArea as TextAreaComponent } from 'components/TextArea';
+import { TextInputProps as TextAreaProps } from 'components/TextInput';
 import React from 'react';
 
 export default {

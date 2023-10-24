@@ -24,7 +24,7 @@ export const Avatar: React.FC<AvatarProps> = React.memo(
 );
 
 Avatar.defaultProps = {
-  size: "MD",
+  size: 'MD',
   rounded: false
 };
 
