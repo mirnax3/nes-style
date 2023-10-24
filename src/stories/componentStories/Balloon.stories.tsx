@@ -15,6 +15,6 @@ export const Balloon = Template.bind({});
 
 Balloon.args = {
   children: 'hi',
-  fromLeft: false,
-  fromRight: true
+  left: false,
+  right: true
 };

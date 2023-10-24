@@ -12,9 +12,6 @@ export const Progress = Template.bind({});
 
 Progress.args = {
   value: 20,
-  max: 100,
-  primary: false,
-  success: false,
-  warning: false,
-  error: false
+  maximum: 100,
+  intent: undefined
 };

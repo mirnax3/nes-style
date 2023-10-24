@@ -1,5 +1,6 @@
 import { Meta, StoryFn } from '@storybook/react';
-import { TextArea as TextAreaComponent, TextAreaProps } from 'components/TextArea';
+import { TextArea as TextAreaComponent } from 'components/TextArea';
+import { TextInputProps as TextAreaProps } from 'components/TextInput';
 import React from 'react';
 
 export default {
@@ -13,8 +14,6 @@ export const TextArea = Template.bind({});
 TextArea.args = {
   label: 'Label',
   placeholder: 'Placeholder',
-  success: false,
-  warning: false,
-  error: false,
-  labelInline: false
+  intent: 'primary',
+  inline: false
 };

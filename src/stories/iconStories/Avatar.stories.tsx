@@ -14,9 +14,7 @@ const Template: StoryFn<AvatarProps> = (args) => {
 export const Avatar = Template.bind({});
 
 Avatar.args = {
-  small: false,
-  medium: false,
-  large: true,
+  size: 'MD',
   rounded: true,
   src: 'https://placekitten.com/g/200/200'
 };

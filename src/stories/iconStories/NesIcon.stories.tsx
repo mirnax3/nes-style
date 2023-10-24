@@ -12,10 +12,8 @@ export const NesIcon = Template.bind({});
 
 NesIcon.args = {
   type: 'trophy',
-  small: false,
-  medium: false,
-  large: false,
-  empty: false,
-  transparent: false,
-  half: false
+  size: 'MD',
+  isEmpty: false,
+  isTransparent: false,
+  isHalf: false
 };

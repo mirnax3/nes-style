@@ -2,21 +2,27 @@ import classNames from 'clsx';
 import * as React from 'react';
 
 export type BalloonProps = {
-  fromLeft?: boolean;
-  fromRight?: boolean;
+  left?: boolean;
+  right?: boolean;
 } & ChildrenProp &
   ParentClassNameProp;
 
 export const Balloon: React.FC<BalloonProps> = React.memo(
-  ({ fromLeft = true, fromRight, children, className, ...other }: BalloonProps) => (
+  ({ left, right, children, className, ...props }: BalloonProps) => (
     <div
       className={classNames(className, 'nes-balloon', {
-        'from-left': fromLeft,
-        'from-right': fromRight
+        'from-left': left && !right,
+        'from-right': right
       })}
-      {...other}>
+      {...props}>
       {children}
     </div>
   )
 );
+
+Balloon.defaultProps = {
+  left: true,
+  right: false
+};
+
 Balloon.displayName = 'NesBalloon';
