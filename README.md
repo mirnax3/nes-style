@@ -4,7 +4,7 @@ Another component system with TailwindCSS but also with NES.css
 
 [npm](https://www.npmjs.com/package/@mirnax3/nes-style)
 
-[storybook](https://www.nes.style)
+[storybook](https://gorgeous-churros-922c98.netlify.app)
 
 ## Installing
 
