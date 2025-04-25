@@ -1,6 +1,6 @@
 # NES Style
 
-Another component system with TailwindCSS but also with NES.css
+Another component system with TailwindCSS but this time with NES.css !!!
 
 [npm](https://www.npmjs.com/package/@mirnax3/nes-style)
 
